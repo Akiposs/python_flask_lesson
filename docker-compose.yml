@@ -1,0 +1,12 @@
+version: "3"
+services:
+  python:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./python_flask:/var/www/python_flask
+    ports:
+      - 58750:5000
+    tty: true
+
